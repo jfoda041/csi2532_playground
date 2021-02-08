@@ -10,7 +10,7 @@ Exemple de mise a jour au README
 
 ![rm2](https://github.com/jfoda041/csi2532_playground/blob/lab04/assets/rm2.png?raw=true)
 
-![rm3](https://github.com/jfoda041/csi2532_playground/blob/lab04/assets/rm3.PNG?raw=true)
+![rm3](https://github.com/jfoda041/csi2532_playground/blob/lab04/assets/rm3.png?raw=true)
 
 ![rm4](https://github.com/jfoda041/csi2532_playground/blob/lab04/assets/rm4.png?raw=true)
 
