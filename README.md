@@ -4,6 +4,20 @@ Playground pour Jacob Fodale (300119336)
 
 Exemple de mise a jour au README
 
+# Lab 04:
+
+![rm1](https://github.com/jfoda041/csi2532_playground/blob/lab04/assets/rm1.png?raw=true)
+
+![rm2](https://github.com/jfoda041/csi2532_playground/blob/lab04/assets/rm2.png?raw=true)
+
+![rm3](https://github.com/jfoda041/csi2532_playground/blob/lab04/assets/rm3.PNG?raw=true)
+
+![rm4](https://github.com/jfoda041/csi2532_playground/blob/lab04/assets/rm4.png?raw=true)
+
+![rm5](https://github.com/jfoda041/csi2532_playground/blob/lab04/assets/rm5.png?raw=true)
+
+![rm6](https://github.com/jfoda041/csi2532_playground/blob/lab04/assets/rm6.png?raw=true)
+
 # Lab 03:
 
 ![er1](https://github.com/jfoda041/csi2532_playground/blob/lab03/assets/er1.PNG?raw=true)
