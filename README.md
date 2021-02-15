@@ -6,6 +6,39 @@ Exemple de mise a jour au README
 
 # Lab 04:
 
+SQL : 
+
+Professor:
+```sql
+ CREATE TABLE Professor (
+    ssn int,
+    primary key (ssn)
+   );
+   ```
+
+Course: 
+```sql
+ CREATE TABLE Course (
+    courseid int,
+    primary key (courseid)
+   );
+  ``` 
+Teaches : 
+
+1 
+
+ ```sql
+  CREATE TABLE Teaches (
+    ssn int REFERENCES Professor(ssn),
+    courseid int REFERENCES Course(courseid)
+   );
+ ```
+ 
+ 2
+
+
+
+
 ![rm1](https://github.com/jfoda041/csi2532_playground/blob/lab04/assets/rm1.png?raw=true)
 
 ![rm2](https://github.com/jfoda041/csi2532_playground/blob/lab04/assets/rm2.png?raw=true)
