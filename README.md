@@ -8,7 +8,7 @@ Exemple de mise a jour au README
 
 SQL : 
 
-Course présent dans toute les exemples. Professor est présent dans toute les exemple à l'exeption de l'exemple 3
+Course est présent dans toute les exemples. Professor est présent dans toute les exemple à l'exeption de l'exemple 3 où on le remplace
 
 Professor:
 ```sql
