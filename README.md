@@ -8,6 +8,8 @@ Exemple de mise a jour au README
 
 SQL : 
 
+Course présent dans toute les exemples. Professor est présent dans toute les exemple à l'exeption de l'exemple 3
+
 Professor:
 ```sql
  CREATE TABLE Professor (
@@ -22,19 +24,77 @@ Course:
     courseid int,
     primary key (courseid)
    );
-  ``` 
-Teaches : 
+  ```  
 
 1 
 
  ```sql
   CREATE TABLE Teaches (
-    ssn int REFERENCES Professor(ssn),
-    courseid int REFERENCES Course(courseid)
+    semesterid int,
+    course_id int,
+    professor_id int,
+    FOREIGN KEY (course_id) REFERENCES Course(courseid),
+    FOREIGN KEY (professor_id) REFERENCES Professor(ssn),
+    PRIMARY KEY (course_id,professor_id)
    );
  ```
  
- 2
+ 3
+ 
+   ```sql
+  CREATE TABLE Professor (
+      ssn int,
+      course_id int,
+      PRIMARY KEY (ssn),
+      FOREIGN KEY (course_id) REFERENCES Course(coursid)
+  );
+ ```
+ 
+ 5
+ 
+ ```sql
+ 
+ CREATE TABLE Semester (
+    semesterid int,
+    PRIMARY KEY (semesterid)
+   );
+   
+   
+  CREATE TABLE Teaches (
+    semester_id int,
+    course_id int,
+    professor_id int,
+    FOREIGN KEY (semester_id) REFERENCES Semester(semesterid),
+    FOREIGN KEY (course_id) REFERENCES Course(courseid),
+    FOREIGN KEY (professor_id) REFERENCES Professor(ssn),
+    PRIMARY KEY (semester_id,professor_id,course_id)
+   );
+ ```
+ 
+ 6
+ 
+ ```sql
+ CREATE TABLE Teaches (
+    semesterid int,
+    group_id int,
+    course_id int,
+    FOREIGN KEY (group_id) REFERENCES Professor_Group(groupid),
+    FOREIGN KEY (course_id) REFERENCES Course(courseid),
+    PRIMARY KEY (semesterid)
+   );
+   
+   CREATE TABLE Professor_Group (
+    groupid int,
+    PRIMARY KEY (groupid)
+   );
+   
+   CREATE TABLE Member_of (
+    professor_id int,
+    group_id int,
+    FOREIGN KEY (professor_id) REFERENCES Professor(ssn),
+    FOREIGN KEY (course_id) REFERENCES Professor_Group(groupid)
+   );
+ ```
 
 
 
