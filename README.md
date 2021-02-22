@@ -46,7 +46,7 @@ Course:
       ssn int,
       course_id int,
       PRIMARY KEY (ssn),
-      FOREIGN KEY (course_id) REFERENCES Course(coursid)
+      FOREIGN KEY (course_id) REFERENCES Course(courseid)
   );
  ```
  
@@ -80,7 +80,7 @@ Course:
     course_id int,
     FOREIGN KEY (group_id) REFERENCES Professor_Group(groupid),
     FOREIGN KEY (course_id) REFERENCES Course(courseid),
-    PRIMARY KEY (semesterid)
+    PRIMARY KEY (group_id,course_id)
    );
    
    CREATE TABLE Professor_Group (
@@ -99,17 +99,13 @@ Course:
 
 
 
-![rm1](https://github.com/jfoda041/csi2532_playground/blob/lab04/assets/rm1.png?raw=true)
+![rm1](https://github.com/jfoda041/csi2532_playground/blob/lab04/assets/new_rm/1rm.png?raw=true)
 
-![rm2](https://github.com/jfoda041/csi2532_playground/blob/lab04/assets/rm2.png?raw=true)
+![rm3](https://github.com/jfoda041/csi2532_playground/blob/lab04/assets/new_rm/2rm.png?raw=true)
 
-![rm3](https://github.com/jfoda041/csi2532_playground/blob/lab04/assets/rm3.png?raw=true)
+![rm5](https://github.com/jfoda041/csi2532_playground/blob/lab04/assets/new_rm/5rm.png?raw=true)
 
-![rm4](https://github.com/jfoda041/csi2532_playground/blob/lab04/assets/rm4.png?raw=true)
-
-![rm5](https://github.com/jfoda041/csi2532_playground/blob/lab04/assets/rm5.png?raw=true)
-
-![rm6](https://github.com/jfoda041/csi2532_playground/blob/lab04/assets/rm6.png?raw=true)
+![rm6](https://github.com/jfoda041/csi2532_playground/blob/lab04/assets/new_rm/6rm.png?raw=true)
 
 # Lab 03:
 
