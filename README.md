@@ -4,6 +4,72 @@ Playground pour Jacob Fodale (300119336)
 
 Exemple de mise a jour au README
 
+# LAB 06 :
+
+question 1 :
+
+``` sql
+SELECT name, birthplace FROM artists;
+```
+
+question 2 :
+
+``` sql
+SELECT title, price FROM artworks
+	WHERE year > 1600;
+```
+
+question 3 :
+
+``` sql
+SELECT title, price FROM artworks
+	WHERE year = 2000 OR artist_name = "Picasso";
+```
+
+question 4 :
+
+``` sql
+SELECT name, birthplace FROM artist
+	WHERE EXTRACT(year FROM BirthDate) > 1880 AND EXTRACT(year FROM BirthDate) < 1930;
+```
+
+question 5 :
+
+``` sql
+SELECT name, birthplace FROM artists 
+	WHERE style IN ('Modern','Baroque','Renaissance');
+```
+
+question 6 :
+
+``` sql
+SELECT * FROM artworks
+	ORDER BY title ASC;
+```
+
+question 7 :
+
+``` sql
+SELECT name, id FROM customers
+    INNER JOIN likeartists ON customers.id = likeartists.customer_id
+    WHERE artist_name = 'Picasso';
+```
+
+question 8 :
+
+``` sql
+SELECT name FROM customers
+    INNER JOIN likeartists ON customers.id = likeartists.customer_id
+    WHERE artist_name IN(
+        SELECT artist_name FROM likeartists
+
+        INNER JOIN artists ON likeartists.artist_name = artists.name
+        WHERE style = 'Renaissance')
+
+        AND amount > 30000;
+```
+
+
 # LAB 05 :
 
 MIGRATION 1 :
