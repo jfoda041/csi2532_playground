@@ -12,6 +12,10 @@ question 1 :
 SELECT name, birthplace FROM artists;
 ```
 
+![q1](https://user-images.githubusercontent.com/71846266/111227132-7cd8ed00-85b8-11eb-9726-4f0875793efc.png)
+
+
+
 question 2 :
 
 ``` sql
@@ -19,19 +23,26 @@ SELECT title, price FROM artworks
 	WHERE year > 1600;
 ```
 
+![q2](https://user-images.githubusercontent.com/71846266/111227139-81050a80-85b8-11eb-8317-57505b721d89.png)
+
 question 3 :
 
 ``` sql
 SELECT title, price FROM artworks
-	WHERE year = 2000 OR artist_name = "Picasso";
+	WHERE year = 2000 OR artist_name = 'Picasso';
 ```
+
+![q3](https://user-images.githubusercontent.com/71846266/111227146-83676480-85b8-11eb-9eba-b6a9eeaabde4.png)
+
 
 question 4 :
 
 ``` sql
-SELECT name, birthplace FROM artist
-	WHERE EXTRACT(year FROM BirthDate) > 1880 AND EXTRACT(year FROM BirthDate) < 1930;
+SELECT name, birthplace FROM artists
+	WHERE EXTRACT(year FROM dateofbirth) > 1880 AND EXTRACT(year FROM dateofbirth) < 1930;
 ```
+
+![q4](https://user-images.githubusercontent.com/71846266/111227161-87938200-85b8-11eb-9f9b-61aec6e0acfa.png)
 
 question 5 :
 
@@ -39,6 +50,7 @@ question 5 :
 SELECT name, birthplace FROM artists 
 	WHERE style IN ('Modern','Baroque','Renaissance');
 ```
+![q5](https://user-images.githubusercontent.com/71846266/111227165-89f5dc00-85b8-11eb-89df-3b5cf25c6eab.png)
 
 question 6 :
 
@@ -47,6 +59,8 @@ SELECT * FROM artworks
 	ORDER BY title ASC;
 ```
 
+![q6](https://user-images.githubusercontent.com/71846266/111227168-8b270900-85b8-11eb-90a4-31a0ce998d07.png)
+
 question 7 :
 
 ``` sql
@@ -54,6 +68,8 @@ SELECT name, id FROM customers
     INNER JOIN likeartists ON customers.id = likeartists.customer_id
     WHERE artist_name = 'Picasso';
 ```
+
+![q7](https://user-images.githubusercontent.com/71846266/111250150-3482f480-85e3-11eb-941b-a0c6e99e3b4e.png)
 
 question 8 :
 
@@ -69,6 +85,7 @@ SELECT name FROM customers
         AND amount > 30000;
 ```
 
+![q8](https://user-images.githubusercontent.com/71846266/111250163-39e03f00-85e3-11eb-9909-368ac4e91f48.png)
 
 # LAB 05 :
 
