@@ -4,6 +4,10 @@ Playground pour Jacob Fodale (300119336)
 
 Exemple de mise a jour au README
 
+# LAB 09 :
+
+[lab9.pdf](https://github.com/jfoda041/csi2532_playground/files/6268536/lab9.pdf)
+
 # LAB 06 :
 
 question 1 :
